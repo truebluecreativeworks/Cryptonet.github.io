@@ -6,7 +6,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon.png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Overpass:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta></meta>
+    <style>
+        body {
+            background-color: #282828;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,15 +21,15 @@
 
 
 
-    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+    <button class="tablink" onclick="openPage('Home', this, 'red')"><i class='fa fa-home'></i> <p>Home</p> </button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen"><i class='fa fa-pagelines'></i><p>News</p></button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')"><i class='fa fa-address-card'></i><p>Contact</p></button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')"><i class='fa fa-question-circle'></i><p>About</p></button>
 
     <div id="Home" class="tabcontent">
         <h3>Home</h3>
-        <center><img src="assets/images/icon.png" width="128px">
-            <h3 style="font-family: Overpass ; font-size: 3vw;">TrackRunny</h3>
+        <center><img src="assets/images/icon.png" width="25%;">
+            <h3 style="font-family: Overpass ; font-size: 8vw;">TrackRunny</h3>
             </img>
 
         </center>

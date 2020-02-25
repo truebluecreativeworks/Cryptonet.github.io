@@ -12,8 +12,10 @@ html {
     /*font-family: Arial;*/
 }
 
-
-/* Style tab links */
+.tablink:hover {
+    background-color: #777;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
 
 .tablink {
     background-color: #555;
@@ -28,18 +30,13 @@ html {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
-.tablink:hover {
-    background-color: #777;
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
 
 /* Style the tab content (and add height:100% for full page content) */
 
 .tabcontent {
     color: white;
     display: none;
-    padding: 100px 20px;
+    /*padding: 100px 20px;*/
     height: 100%;
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
@@ -58,4 +55,15 @@ html {
 
 #About {
     background-color: orange;
+}
+
+@media screen and (max-width: 1080px) {
+    .tablink i {
+        padding: 14px 16px;
+        font-size: 64px;
+    }
+    .tablink p {
+        padding: 14px 16px;
+        font-size: 0px;
+    }
 }
